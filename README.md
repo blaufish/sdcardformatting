@@ -29,6 +29,7 @@ Note; SDCF-Full (FAT32) vs Windows (formatted with exFAT):
 * Formatted to SDA specification appears to yield a 1 - 2% performance improvement. Perhaps to minor to be an actual result, could just be exFAT vs FAT performance or messurement fluke. Or if there is any alignment issue causing the windows format to be slower, it has negible real world impact. 
 * Cannot demonstrate any noticeable performance gains upon formatting with either tool compared to just deleting files.
 * Cannot demonstrate any noticeable performance gains upon first writing ones to card. Card does not appear to be aware of any potential speed improvements due to all ones on card. 
+
 Note; GH5 card formatting is *superfast*. It also does not change exFAT to FAT32 if card was formatted incorrectly. I have doubts about camera doing much else than a quick format. If it really earases card, card must be bloody fast at erasing.
 
 Note; output from formatting with SD Card Formatter:
