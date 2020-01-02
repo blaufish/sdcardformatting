@@ -12,14 +12,14 @@ So far, I fail to see any impact at all if we consider 1-2% to be within margin 
 
 ## Benchmark Sandisk Ultra (16GB) class 10, 12-13GB tests
 
-   |         |     Windows(exFAT)  | SDCF-Full           | GH5(FAT32)          
--- | ------- | ------------------- | ------------------- | ------------------- 
-1  | random1 | 12128754 Bytes/sec. | 12396301 Bytes/sec. | 12532854 Bytes/sec.
-2  | random2 | 12186485 Bytes/sec. | 12450118 Bytes/sec. | 12508253 Bytes/sec.
-3  | ones    | 12255314 Bytes/sec. | 12541014 Bytes/sec. | 12570734 Bytes/sec.
-4  | random1 | 12294085 Bytes/sec. | 12508532 Bytes/sec. | 12538049 Bytes/sec.
-5  | ones    | 12324653 Bytes/sec. | 12548464 Bytes/sec. | 12614756 Bytes/sec.
-6  | random2 | 12295428 Bytes/sec. | 12484910 Bytes/sec. | 12593365 Bytes/sec.
+Test            | Windows(exFAT)      | SDCF-Full           | GH5(FAT32)          
+--------------- | ------------------- | ------------------- | ------------------- 
+Test 1, random1 | 12128754 Bytes/sec. | 12396301 Bytes/sec. | 12532854 Bytes/sec.
+Test 2, random2 | 12186485 Bytes/sec. | 12450118 Bytes/sec. | 12508253 Bytes/sec.
+Test 3, ones    | 12255314 Bytes/sec. | 12541014 Bytes/sec. | 12570734 Bytes/sec.
+Test 4, random1 | 12294085 Bytes/sec. | 12508532 Bytes/sec. | 12538049 Bytes/sec.
+Test 5, ones    | 12324653 Bytes/sec. | 12548464 Bytes/sec. | 12614756 Bytes/sec.
+Test 6, random2 | 12295428 Bytes/sec. | 12484910 Bytes/sec. | 12593365 Bytes/sec.
 
 Test cases:
 * Windows(exFAT): card formatted in windows to exFAT, settings that violates SDA recommendations. Full format. Test using large 13 GiB file.
