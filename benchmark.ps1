@@ -1,12 +1,19 @@
 ﻿$Destination = "F:\test"
-$FileName = "test.bin"
+function delete {
+    Param( [parameter(Mandatory=$true)] [String] $DeleteFile )
+    if (Test-Path $DeleteFile) {
+       Remove-Item $DeleteFile
+    }
+}
+
 function benchmark {
     Param( [parameter(Mandatory=$true)] [String] $Sourcedir )
-    if (Test-Path $Destination\$FileName) {
-       Remove-Item $Destination\$FileName
-    }
+    delete $Destination\test-000.bin
+    delete $Destination\test-001.bin
+    delete $Destination\test-002.bin
+    delete $Destination\test-003.bin
+    
     robocopy $Sourcedir $Destination $FileName /TEE
-    #xcopy $Sourcedir $Destination
 }
 
 benchmark random1.dir
@@ -16,10 +23,4 @@ benchmark ones.dir
 benchmark random1.dir
 
 benchmark ones.dir
-benchmark random2.dir
-
-benchmark zeros.dir
-benchmark random1.dir
-
-benchmark zeros.dir
 benchmark random2.dir
